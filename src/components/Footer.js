@@ -14,7 +14,7 @@ const Footer = () => {
         {/* About Us */}
         <div>
           <span className="text-lg font-medium">
-            About Us<span className="flex md:hidden">+</span>
+            About Us<span className="sm:inline block md:hidden">+</span>
           </span>
           <ul className="mt-3 text-gray-500 hidden md:block">
             <li>About</li>
