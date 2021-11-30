@@ -17,12 +17,14 @@ const Footer = () => {
             About Us<span className="sm:inline block md:hidden">+</span>
           </span>
           <ul className="mt-3 text-gray-500 hidden md:block">
-            <li>About</li>
-            <li>Careers</li>
-            <li>Business Contact</li>
-            <li>Terms</li>
-            <li>Privacy</li>
-            <li>Community</li>
+            <li className="pb-2 hover:text-black cursor-pointer">About</li>
+            <li className="pb-2 hover:text-black cursor-pointer">Careers</li>
+            <li className="pb-2 hover:text-black cursor-pointer">
+              Business Contact
+            </li>
+            <li className="pb-2 hover:text-black cursor-pointer">Terms</li>
+            <li className="pb-2 hover:text-black cursor-pointer">Privacy</li>
+            <li className="pb-2 hover:text-black cursor-pointer">Community</li>
           </ul>
         </div>
 
@@ -30,46 +32,72 @@ const Footer = () => {
         <div>
           <span className="text-lg font-medium">Service</span>
           <ul className="mt-3 text-gray-500 hidden md:block">
-            <li>Download</li>
-            <li>Buy Crypto</li>
-            <li>Insititutional Service</li>
-            <li>Listing Application</li>
-            <li>Market Data</li>
+            <li className="pb-2 hover:text-black cursor-pointer">Download</li>
+            <li className="pb-2 hover:text-black cursor-pointer">Buy Crypto</li>
+            <li className="pb-2 hover:text-black cursor-pointer">
+              Insititutional Service
+            </li>
+            <li className="pb-2 hover:text-black cursor-pointer">
+              Listing Application
+            </li>
+            <li className="pb-2 hover:text-black cursor-pointer">
+              Market Data
+            </li>
           </ul>
         </div>
         {/* Support */}
         <div>
           <span className="text-lg font-medium">Support</span>
           <ul className="mt-3 text-gray-500 hidden md:block">
-            <li>Give Us Feedback</li>
-            <li>Support Center</li>
-            <li>Submit a request</li>
-            <li>Fees</li>
-            <li>API Documentation</li>
-            <li>Trading Rules</li>
+            <li className="pb-2 hover:text-black cursor-pointer">
+              Give Us Feedback
+            </li>
+            <li className="pb-2 hover:text-black cursor-pointer">
+              Support Center
+            </li>
+            <li className="pb-2 hover:text-black cursor-pointer">
+              Submit a request
+            </li>
+            <li className="pb-2 hover:text-black cursor-pointer">Fees</li>
+            <li className="pb-2 hover:text-black cursor-pointer">
+              API Documentation
+            </li>
+            <li className="pb-2 hover:text-black cursor-pointer">
+              Trading Rules
+            </li>
           </ul>
         </div>
         {/* Learn */}
         <div>
           <span className="text-lg font-medium">Learn</span>
-          <ul className="mt-3 text-gray-500 hidden md:block">
-            <li>Buy Bitcoin</li>
-            <li>Buy Etheruem</li>
-            <li>Buy Litecoin</li>
-            <li>Buy Dogecoin</li>
-            <li>Buy SHIB</li>
-            <li>Buy Ripple</li>
-            <li>Buy Bitcoin Cash</li>
+          <ul className="mt-3 text-gray-500 hidden md:block ">
+            <li className="pb-2 hover:text-black cursor-pointer">
+              Buy Bitcoin
+            </li>
+            <li className="pb-2 hover:text-black cursor-pointer">
+              Buy Etheruem
+            </li>
+            <li className="pb-2 hover:text-black cursor-pointer">
+              Buy Litecoin
+            </li>
+            <li className="pb-2 hover:text-black cursor-pointer">
+              Buy Dogecoin
+            </li>
+            <li className="pb-2 hover:text-black cursor-pointer">Buy SHIB</li>
+            <li className="pb-2 hover:text-black cursor-pointer">Buy Ripple</li>
+            <li className="pb-2 hover:text-black cursor-pointer">
+              Buy Bitcoin Cash
+            </li>
           </ul>
         </div>
         {/* community */}
         <div>
           <span className="text-lg font-medium">Community</span>
-          <div className="mt-3 text-gray-500 flex space-x-4">
-            <FaTelegramPlane className="h-6 w-5" />
-            <FaTwitterSquare className="h-6 w-5" />
-            <FaViber className="h-6 w-5" />
-            <FaWeibo className="h-6 w-5" />
+          <div className="mt-3 text-gray-500 flex space-x-4 ">
+            <FaTelegramPlane className="h-6 w-5 hover:text-gray-800 cursor-pointer" />
+            <FaTwitterSquare className="h-6 w-5 hover:text-gray-800 cursor-pointer" />
+            <FaViber className="h-6 w-5 hover:text-gray-800 cursor-pointer" />
+            <FaWeibo className="h-6 w-5 hover:text-gray-800 cursor-pointer" />
           </div>
         </div>
       </div>

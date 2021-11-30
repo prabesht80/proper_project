@@ -1,12 +1,10 @@
 import React from 'react';
-import Footer from './components/Footer';
-import Navbar from './components/Navbar';
+import Layout from './components/Layout';
 
 const App = () => {
   return (
     <>
-      <Navbar />
-      <Footer />
+      <Layout></Layout>
     </>
   );
 };

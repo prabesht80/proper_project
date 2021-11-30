@@ -18,7 +18,7 @@ function Navbar() {
 
   return (
     //   navbar container
-    <nav className="text-gray-700">
+    <nav className="text-gray-700 font-medium ">
       <div className="p-3 ">
         <div className="flex justify-around">
           {/* Logo   */}
@@ -32,14 +32,14 @@ function Navbar() {
           {/* primary nav */}
 
           <div>
-            <ul className="hidden mt-3 sm:flex space-x-8">
-              <li>
+            <ul className="hidden mt-3 sm:flex space-x-8 ">
+              <li className="hover:text-yellow-400">
                 <a href="#">Exchange</a>
               </li>
-              <li>
+              <li className="hover:text-yellow-400">
                 <a href="#">Market</a>
               </li>
-              <li>
+              <li className="hover:text-yellow-400">
                 <a href="#">Discover</a>
               </li>
             </ul>
@@ -48,7 +48,7 @@ function Navbar() {
           {/* secondary nav */}
 
           <div className="hidden mt-1 sm:flex space-x-5">
-            <button>Login</button>
+            <button className="hover:text-yellow-400">Login</button>
             <button className="p-2 rounded-lg bg-yellow-400 hover:bg-yellow-300 focus:ring-2 focus:ring-yellow-200 ring-offset-1">
               Register
             </button>
@@ -67,22 +67,22 @@ function Navbar() {
       <div className="mobile-menu hidden sm:hidden p-5 mt-2 w-1/2 absolute right-0 ">
         <ul className="mx-3 text-lg flex flex-col">
           <li>
-            <div className="p-2 text-center">Login</div>
+            <div className="p-2 text-center hover:text-yellow-400">Login</div>
           </li>
           <li>
             <div className="p-3 text-center rounded-lg bg-yellow-400 hover:bg-yellow-300">
               Register
             </div>
           </li>
-          <li className="mt-5 flex">
+          <li className="mt-5 flex hover:text-yellow-400">
             <BsCurrencyExchange />
             <a href="#">Exchange</a>
           </li>
-          <li className="mt-3 flex">
+          <li className="mt-3 flex hover:text-yellow-400">
             <ImStatsBars2 />
             <a href="#">Market</a>
           </li>
-          <li className="mt-3 flex">
+          <li className="mt-3 flex hover:text-yellow-400">
             <RiCompassDiscoverLine />
             <a href="#">Discover</a>
           </li>
