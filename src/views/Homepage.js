@@ -1,10 +1,14 @@
 import React from 'react';
-import Marquee from '../components/Marquee';
+import Hero from '../components/Hero';
+import Hero2 from '../components/Hero2';
+import Hero3 from '../components/Hero3';
 
 const Homepage = () => {
   return (
     <>
-      <Marquee />
+      <Hero />
+      <Hero3 />
+      <Hero2 />
     </>
   );
 };

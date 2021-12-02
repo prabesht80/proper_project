@@ -3,6 +3,7 @@ import { BsCurrencyExchange } from 'react-icons/bs';
 import { ImStatsBars2 } from 'react-icons/im';
 import { RiCompassDiscoverLine } from 'react-icons/ri';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   useEffect(() => {
@@ -18,29 +19,29 @@ function Navbar() {
 
   return (
     //   navbar container
-    <nav className="text-gray-700 font-medium ">
-      <div className="p-3 ">
+    <nav className="text-gray-700 font-medium">
+      <div className="py-3">
         <div className="flex justify-around">
           {/* Logo   */}
 
           <div>
-            <a href="#">
-              <span className="text-3xl font-medium">CRYPTO</span>
-            </a>
+            <span className="text-3xl font-medium">
+              <Link to="/">CRYPTO</Link>
+            </span>
           </div>
 
           {/* primary nav */}
 
           <div>
-            <ul className="hidden mt-3 sm:flex space-x-8 ">
+            <ul className="hidden mt-3 sm:flex space-x-16 ">
               <li className="hover:text-yellow-400">
-                <a href="#">Exchange</a>
+                <Link to="/exchanges">Exchanges</Link>
               </li>
               <li className="hover:text-yellow-400">
-                <a href="#">Market</a>
+                <Link to="/cryptocurrency">Market</Link>
               </li>
               <li className="hover:text-yellow-400">
-                <a href="#">Discover</a>
+                <Link to="/news">Discover</Link>
               </li>
             </ul>
           </div>
@@ -64,7 +65,7 @@ function Navbar() {
       </div>
 
       {/* mobile menu  */}
-      <div className="mobile-menu hidden sm:hidden p-5 mt-2 w-1/2 absolute right-0 ">
+      <div className="mobile-menu hidden sm:hidden p-5 mt-2 w-1/2 absolute right-0  bg-white">
         <ul className="mx-3 text-lg flex flex-col">
           <li>
             <div className="p-2 text-center hover:text-yellow-400">Login</div>
@@ -76,15 +77,15 @@ function Navbar() {
           </li>
           <li className="mt-5 flex hover:text-yellow-400">
             <BsCurrencyExchange />
-            <a href="#">Exchange</a>
+            <Link to="/exchanges">Exchange</Link>
           </li>
           <li className="mt-3 flex hover:text-yellow-400">
             <ImStatsBars2 />
-            <a href="#">Market</a>
+            <Link to="/cryptocurrency">Market</Link>
           </li>
           <li className="mt-3 flex hover:text-yellow-400">
             <RiCompassDiscoverLine />
-            <a href="#">Discover</a>
+            <Link to="/news">Discover</Link>
           </li>
         </ul>
       </div>

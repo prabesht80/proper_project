@@ -2,7 +2,8 @@ import React from 'react';
 import { useGetCryptosQuery } from '../services/cryptoApi';
 
 const Marquee = () => {
-  const { data, isFetching } = useGetCryptosQuery();
+  const count = 50;
+  const { data, isFetching } = useGetCryptosQuery(count);
   const coindataForMarquee = data?.data?.coins;
   // console.log(data);
   // console.log(coindataForMarquee[0].allTimeHigh.price);
@@ -16,13 +17,14 @@ const Marquee = () => {
 
   return (
     <>
-      <div className="flex justify-around content-center ">
+      <div className="flex flex-wrap flex-row justify-evenly ml-2 ">
         <div>
           <marquee
             behavior="scroll"
             direction="up"
-            scrollamount="2"
+            scrollamount="9"
             height="50px"
+            className="ml-20 md:ml-6 mt-12"
           >
             <div>
               {firstSlice.map((item) => {
@@ -42,6 +44,7 @@ const Marquee = () => {
             direction="up"
             scrollamount="5"
             height="50px"
+            className="mt-12"
           >
             <div className="p-3">
               {secondSlice.map((item) => {
@@ -61,6 +64,27 @@ const Marquee = () => {
             direction="up"
             scrollamount="3"
             height="50px"
+            className="mt-12 hidden md:block"
+          >
+            <div>
+              {thirdSlice.map((item) => {
+                return (
+                  <div className="p-3">
+                    <span key={item.id}>{item.symbol}:-</span>
+                    <span>{item.price}</span>
+                  </div>
+                );
+              })}
+            </div>
+          </marquee>
+        </div>
+        <div>
+          <marquee
+            behavior="scroll"
+            direction="up"
+            scrollamount="3"
+            height="50px"
+            className="mt-12 hidden md:block "
           >
             <div>
               {thirdSlice.map((item) => {
