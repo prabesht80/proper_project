@@ -1,6 +1,5 @@
 import React from 'react';
 import Marquee from './Marquee';
-// import heroImage from '../assets/hero.jpg';
 
 const Hero = () => {
   return (

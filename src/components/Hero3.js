@@ -5,11 +5,10 @@ import { Link } from 'react-router-dom';
 const Hero3 = () => {
   const count = 6;
   const { data, isFetching } = useGetCryptosQuery(count);
-
   //only coins data
   const coinDataTopTen = data?.data?.coins;
 
-  if (isFetching) return 'loading..';
+  if (isFetching) return <div className="animate-spin"></div>;
 
   return (
     <div className="mt-12">
@@ -18,7 +17,7 @@ const Hero3 = () => {
           <span>Market trend</span>
         </div>
         <div>
-          <table className=" w-5/6 text-center">
+          <table className=" w-5/6 text-center animate-pulse">
             <tr className="text-gray-700">
               <th>Name</th>
               <th>Last Price</th>

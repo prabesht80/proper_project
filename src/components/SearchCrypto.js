@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const SearchCrypto = ({ coins }) => {
   const [cryptos, setCryptos] = useState();
   const [searchTerm, setSearchTerm] = useState('');
-  console.log(cryptos);
+  // console.log(cryptos);
 
   useEffect(() => {
     setCryptos(coins?.data?.coins);

@@ -8,7 +8,7 @@ const Marquee = () => {
   // console.log(data);
   // console.log(coindataForMarquee[0].allTimeHigh.price);
 
-  if (isFetching) return 'loading..';
+  if (isFetching) return <div className="animate-spin"></div>;
 
   const firstSlice = coindataForMarquee.slice(0, 6);
   const secondSlice = coindataForMarquee.slice(6, 12);

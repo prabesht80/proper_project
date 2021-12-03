@@ -18,7 +18,7 @@ const CryptoDetails = () => {
   console.log(data);
   const coinDetails = data?.data?.coin;
 
-  if (isFetching) return 'loading...';
+  if (isFetching) return <div className="animate-spin"></div>;
 
   return (
     <div className="m-auto max-w-screen-md xl:max-w-screen-lg mt-16 mb-10 ">
