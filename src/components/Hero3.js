@@ -33,8 +33,8 @@ const Hero3 = () => {
                     <Link to={`/crypto/${coin.id}`}>
                       <img src={coin.iconUrl} alt="#" className="w-10 h-8" />
 
-                      <span className="text-bold ">({coin.symbol})</span>
-                      <span>{coin.name}</span>
+                      {coin.symbol}
+                      {coin.name}
                     </Link>
                   </td>
                   <td>${Math.round(coin.price * 100) / 100}</td>
