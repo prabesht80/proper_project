@@ -5,7 +5,7 @@ const Register = () => {
   return (
     <>
       <div className="container mx-auto">
-        <div className="flex justify-center px-6 my-12">
+        <div className="flex justify-center px-6 py-12 my-12">
           {/* row */}
           <div className="w-full xl:w-3/4 lg:w-11/12 flex">
             {/* column */}

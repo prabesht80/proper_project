@@ -23,7 +23,7 @@ const SearchCrypto = ({ coins }) => {
       <div className="relative mr-40">
         <input
           placeholder="search crypto...."
-          className=" sm:w-1/3 p-2 rounded-lg bg-yellow-300 absolute bottom-0 right-0"
+          className="ml-2 sm:ml-0 w-5/4 sm:w-1/3 p-2 rounded-lg bg-yellow-300 sm:absolute bottom-0 right-2"
           onChange={(e) => setSearchTerm(e.target.value.toLowerCase())}
         />
       </div>

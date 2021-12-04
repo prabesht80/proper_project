@@ -6,7 +6,7 @@ const Login = () => {
     <>
       <div className="containe mx-auto">
         <div className="flex justify-center py-24">
-          <div className="w-2/5 md:w-1/5 bg-gray-50 py-4 px-8 rounded">
+          <div className="w-4/5 sm:w-2/5 bg-gray-50 py-4 px-6 rounded">
             <div>
               <h1 className="italic text-4xl text-center font-bold text-gray-700">
                 Crypto
