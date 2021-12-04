@@ -26,7 +26,7 @@ function Navbar() {
 
           <div>
             <span className="text-3xl font-medium">
-              <Link to="/">CRYPTO</Link>
+              <Link to="/homepage">CRYPTO</Link>
             </span>
           </div>
 
@@ -49,9 +49,11 @@ function Navbar() {
           {/* secondary nav */}
 
           <div className="hidden mt-1 sm:flex space-x-5">
-            <button className="hover:text-yellow-400">Login</button>
+            <button className="hover:text-yellow-400">
+              <Link to="/login">Login</Link>
+            </button>
             <button className="p-2 rounded-lg bg-yellow-400 hover:bg-yellow-300 focus:ring-2 focus:ring-yellow-200 ring-offset-1">
-              Register
+              <Link to="/">Register</Link>
             </button>
           </div>
 
@@ -68,11 +70,13 @@ function Navbar() {
       <div className="mobile-menu hidden sm:hidden p-5 mt-2 w-1/2 absolute right-0  bg-white">
         <ul className="mx-3 text-lg flex flex-col">
           <li>
-            <div className="p-2 text-center hover:text-yellow-400">Login</div>
+            <div className="p-2 text-center hover:text-yellow-400">
+              <Link to="/login">Login</Link>
+            </div>
           </li>
           <li>
             <div className="p-3 text-center rounded-lg bg-yellow-400 hover:bg-yellow-300">
-              Register
+              <Link to="/">Register</Link>
             </div>
           </li>
           <li className="mt-5 flex hover:text-yellow-400">

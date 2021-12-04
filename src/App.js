@@ -8,26 +8,68 @@ import {
   Cryptocurrency,
   CryptoDetails,
   News,
+  Login,
+  Register,
 } from './views';
 
 const App = () => {
   return (
     <>
-      <Layout>
-        <div className="routes">
-          <Routes>
-            <Route exact path="/" element={<Homepage />} />
+      <div className="routes">
+        <Routes>
+          <Route exact path="/" element={<Register />} />
+          <Route exact path="/login" element={<Login />} />
+          <Route
+            exact
+            path="/homepage"
+            element={
+              <Layout>
+                <Homepage />
+              </Layout>
+            }
+          />
 
-            <Route exact path="/exchanges" element={<Exchanges />} />
+          <Route
+            exact
+            path="/exchanges"
+            element={
+              <Layout>
+                <Exchanges />
+              </Layout>
+            }
+          />
 
-            <Route exact path="/cryptocurrency" element={<Cryptocurrency />} />
+          <Route
+            exact
+            path="/cryptocurrency"
+            element={
+              <Layout>
+                <Cryptocurrency />
+              </Layout>
+            }
+          />
 
-            <Route exact path="crypto/:coinId" element={<CryptoDetails />} />
+          <Route
+            exact
+            path="crypto/:coinId"
+            element={
+              <Layout>
+                <CryptoDetails />
+              </Layout>
+            }
+          />
 
-            <Route exact path="/news" element={<News />} />
-          </Routes>
-        </div>
-      </Layout>
+          <Route
+            exact
+            path="/news"
+            element={
+              <Layout>
+                <News />
+              </Layout>
+            }
+          />
+        </Routes>
+      </div>
     </>
   );
 };

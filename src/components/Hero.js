@@ -1,5 +1,6 @@
 import React from 'react';
 import Marquee from './Marquee';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -13,7 +14,7 @@ const Hero = () => {
         </h2>
         <div className="mt-4 md:mt-8 mb-14 md:mb-28">
           <button className="px-10 py-2 text-xl rounded-lg bg-yellow-400 hover:bg-yellow-300 focus:ring-2 focus:ring-yellow-200 ring-offset-1">
-            Register Now
+            <Link to="/">Register Now</Link>
           </button>
         </div>
       </div>
