@@ -41,7 +41,7 @@ const SearchCrypto = ({ coins }) => {
           {cryptos?.map((crypto) => {
             return (
               <tr key={crypto.id} className="text-lg">
-                <td className="flex flex-row m-3 sm:ml-36 rounded-lg hover:bg-gray-200">
+                <td className="flex flex-row m-3 md:ml-36 rounded-lg hover:bg-gray-200">
                   <Link key={crypto.id} to={`/crypto/${crypto.id}`}>
                     <img src={crypto.iconUrl} alt="#" className="w-10 h-8" />
                     <span className="text-bold ">({crypto.symbol})</span>

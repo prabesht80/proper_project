@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <div className="text-black">
-      <div className="ml-2 sm:ml-36 md:mr-36">
-        <h1 className="text-4xl font-semibold mt-12 md:mt-28  md:text-5xl ">
+    <div className="text-black ">
+      <div className=" md:ml-36 md:mr-36 bg-gray-100 rounded-lg">
+        <h1 className=" ml-2 text-4xl font-semibold mt-12 md:mt-28  md:text-5xl ">
           Buy & sell Crypto in minutes
         </h1>
-        <h2 className="text-left text-xl mt-4 md:mt-8">
+        <h2 className=" ml-2 text-left text-xl mt-4 md:mt-8">
           Join in world's largest crypto exchange
         </h2>
         <div className="mt-4 md:mt-8 mb-14 md:mb-28">

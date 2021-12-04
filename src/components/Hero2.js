@@ -6,10 +6,10 @@ const Hero2 = () => {
     <div>
       {/* Get in Touch */}
       <div>
-        <h1 className="text-3xl font-medium ml-2 sm:ml-36 mt-16">
+        <h1 className="text-3xl font-medium ml-2 md:ml-36 mt-16">
           Get in touch. Stay in touch
         </h1>
-        <div className="flex flex-col sm:flex-row justify-around content-center ml-2 sm:ml-16 lg:ml-16 mr-8 mt-8">
+        <div className="flex flex-col md:flex-row justify-around content-center ml-2 md:ml-16 lg:ml-16 mr-8 mt-8">
           <div className="w-48 hover:bg-gray-200 rounded-lg p-2 cursor-pointer">
             <FcCustomerSupport className="h-24 w-16" />
             <p className="text-lg font-medium mb-2">24/7 Support</p>

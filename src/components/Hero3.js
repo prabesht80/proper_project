@@ -13,23 +13,23 @@ const Hero3 = () => {
   return (
     <div className="mt-12">
       <div>
-        <div className="text-4xl font-semibold mb-8 ml-2 sm:ml-36">
+        <div className="text-4xl font-semibold mb-8 ml-2 md:ml-36">
           <span>Market trend</span>
         </div>
         <div>
           {/* homepage vrypto table */}
           <table className=" w-5/6 text-center">
             <tr className="text-gray-700">
-              <th>Name</th>
+              <th className="absolute md:ml-36 ml-2">Name</th>
               <th>Last Price</th>
               <th>24h change</th>
-              <th>Markets</th>
+              <th className="hidden sm:block">Markets</th>
             </tr>
 
             {coinDataTopTen.map((coin) => {
               return (
                 <tr className="text-md sm:text-2xl">
-                  <td className="flex flex-row m-3 sm:ml-36 rounded-lg hover:bg-gray-200">
+                  <td className="flex flex-row m-3 md:ml-36 rounded-lg hover:bg-gray-200">
                     <Link to={`/crypto/${coin.id}`}>
                       <img src={coin.iconUrl} alt="#" className="w-10 h-8" />
 
@@ -45,7 +45,7 @@ const Hero3 = () => {
                       <p style={{ color: 'green' }}>{coin.change}%</p>
                     )}
                   </td>
-                  <td>------</td>
+                  <td className="hidden sm:block">------</td>
                 </tr>
               );
             })}

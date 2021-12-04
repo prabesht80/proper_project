@@ -9,17 +9,17 @@ import {
 const Footer = () => {
   return (
     // footer container
-    <div className="">
-      <div className="p-3 mb-2 border-b-4 flex flex-col justify-evenly md:flex-row">
+    <div className=" mt-4">
+      <div className="p-3 mb-2 border-b-4 flex flex-col flex-wrap justify-evenly md:flex-row">
         {/* About Us */}
         <div>
-          <span className="text-lg font-medium">
-            About Us<span className="sm:inline block md:hidden">+</span>
-          </span>
-          <ul className="mt-3 text-gray-500 hidden md:block">
+          <span className="text-lg font-medium">About Us</span>
+          <ul className="mt-3 text-gray-500 :block">
             <li className="pb-2 hover:text-black cursor-pointer">About</li>
-            <li className="pb-2 hover:text-black cursor-pointer">Careers</li>
-            <li className="pb-2 hover:text-black cursor-pointer">
+            <li className="pb-2 hover:text-black cursor-pointer hidden md:block">
+              Careers
+            </li>
+            <li className="pb-2 hover:text-black cursor-pointer hidden md:block">
               Business Contact
             </li>
             <li className="pb-2 hover:text-black cursor-pointer">Terms</li>
@@ -31,16 +31,16 @@ const Footer = () => {
         {/* Services */}
         <div>
           <span className="text-lg font-medium">Service</span>
-          <ul className="mt-3 text-gray-500 hidden md:block">
+          <ul className="mt-3 text-gray-500 block">
             <li className="pb-2 hover:text-black cursor-pointer">Download</li>
             <li className="pb-2 hover:text-black cursor-pointer">Buy Crypto</li>
-            <li className="pb-2 hover:text-black cursor-pointer">
+            <li className="pb-2 hover:text-black cursor-pointer hidden md:block">
               Insititutional Service
             </li>
-            <li className="pb-2 hover:text-black cursor-pointer">
+            <li className="pb-2 hover:text-black cursor-pointer hidden md:block">
               Listing Application
             </li>
-            <li className="pb-2 hover:text-black cursor-pointer">
+            <li className="pb-2 hover:text-black cursor-pointer hidden md:block">
               Market Data
             </li>
           </ul>
@@ -48,7 +48,7 @@ const Footer = () => {
         {/* Support */}
         <div>
           <span className="text-lg font-medium">Support</span>
-          <ul className="mt-3 text-gray-500 hidden md:block">
+          <ul className="mt-3 text-gray-500 block">
             <li className="pb-2 hover:text-black cursor-pointer">
               Give Us Feedback
             </li>
@@ -58,11 +58,13 @@ const Footer = () => {
             <li className="pb-2 hover:text-black cursor-pointer">
               Submit a request
             </li>
-            <li className="pb-2 hover:text-black cursor-pointer">Fees</li>
-            <li className="pb-2 hover:text-black cursor-pointer">
+            <li className="pb-2 hover:text-black cursor-pointer hidden md:block">
+              Fees
+            </li>
+            <li className="pb-2 hover:text-black cursor-pointer hidden md:block">
               API Documentation
             </li>
-            <li className="pb-2 hover:text-black cursor-pointer">
+            <li className="pb-2 hover:text-black cursor-pointer hidden md:block">
               Trading Rules
             </li>
           </ul>
@@ -70,22 +72,26 @@ const Footer = () => {
         {/* Learn */}
         <div>
           <span className="text-lg font-medium">Learn</span>
-          <ul className="mt-3 text-gray-500 hidden md:block ">
+          <ul className="mt-3 text-gray-500  ">
             <li className="pb-2 hover:text-black cursor-pointer">
               Buy Bitcoin
             </li>
             <li className="pb-2 hover:text-black cursor-pointer">
               Buy Etheruem
             </li>
-            <li className="pb-2 hover:text-black cursor-pointer">
+            <li className="pb-2 hover:text-black cursor-pointer hidden md:block">
               Buy Litecoin
             </li>
             <li className="pb-2 hover:text-black cursor-pointer">
               Buy Dogecoin
             </li>
-            <li className="pb-2 hover:text-black cursor-pointer">Buy SHIB</li>
-            <li className="pb-2 hover:text-black cursor-pointer">Buy Ripple</li>
-            <li className="pb-2 hover:text-black cursor-pointer">
+            <li className="pb-2 hover:text-black cursor-pointer hidden md:block">
+              Buy SHIB
+            </li>
+            <li className="pb-2 hover:text-black cursor-pointer hidden md:block">
+              Buy Ripple
+            </li>
+            <li className="pb-2 hover:text-black cursor-pointer hidden md:block">
               Buy Bitcoin Cash
             </li>
           </ul>

@@ -22,9 +22,9 @@ const News = () => {
   // console.log(data);
   return (
     <div className="m-auto max-w-screen-md xl:max-w-screen-lg mt-16 mb-12">
-      <div className="flex mb-8 ml-8 md:ml-0">
+      <div className="flex mb-8 ml-0">
         <button
-          className="p-2 rounded-lg bg-gray-200 hover:bg-gray-300"
+          className="p-2 rounded-lg bg-gray-200 hover:bg-gray-300 ml-2"
           onClick={() => setNewsCategory('cryptocurrency')}
         >
           Cryptocurency
@@ -48,15 +48,15 @@ const News = () => {
           Terra
         </button>
       </div>
-      <div className="ml-2">
+      <div className="ml-2 ">
         {/* hero News */}
         <div className="flex flex-wrap md:flex-nowrap">
           <img
             src={singleNews?.image?.thumbnail?.contentUrl || demoImage}
             alt="#"
-            className="ml-8 md:ml-0"
+            className="ml-0"
           />
-          <div className="ml-8 mt-4">
+          <div className="ml-2 mt-4">
             <h1 className="text-3xl font-semibold hover:underline">
               {singleNews[0].name}
             </h1>
@@ -69,9 +69,9 @@ const News = () => {
             <img
               src={cryptoNews[1]?.image?.thumbnail?.contentUrl}
               alt="#"
-              className="h-44 w-44 ml-8 md:ml-0"
+              className="h-44 w-44 ml-2 md:ml-0"
             />
-            <h3 className="text-lg font-semibold hover:underline ml-8 md:ml-0">
+            <h3 className="text-lg font-semibold hover:underline ml-2 md:ml-0">
               {cryptoNews[1].name}
             </h3>
           </div>
@@ -79,9 +79,9 @@ const News = () => {
             <img
               src={cryptoNews[2]?.image?.thumbnail?.contentUrl}
               alt="#"
-              className="h-44 w-44 ml-8 md:ml-0"
+              className="h-44 w-44 ml-2 md:ml-0"
             />
-            <h3 className="text-lg font-semibold hover:underline ml-8 md:ml-0">
+            <h3 className="text-lg font-semibold hover:underline ml-2 md:ml-0">
               {cryptoNews[3].name}
             </h3>
           </div>
@@ -89,9 +89,9 @@ const News = () => {
             <img
               src={cryptoNews[4]?.image?.thumbnail?.contentUrl}
               alt="#"
-              className="h-44 w-44 ml-8 md:ml-0"
+              className="h-44 w-44 ml-2 md:ml-0"
             />
-            <h3 className="text-lg font-semibold hover:underline ml-8 md:ml-0">
+            <h3 className="text-lg font-semibold hover:underline ml-2 md:ml-0">
               {cryptoNews[4].name}
             </h3>
           </div>
@@ -105,7 +105,7 @@ const News = () => {
             return (
               <div
                 key={news.id}
-                className="flex justify-between my-12 flex-wrap md:flex-nowrap ml-8 md:ml-0 border-t-4"
+                className="flex justify-between my-12 flex-wrap md:flex-nowrap ml-2 md:ml-0 border-t-4"
               >
                 <h1 className="text-2xl font-semibold hover:underline">
                   {news.name}

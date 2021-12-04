@@ -3,7 +3,7 @@ import millify from 'millify';
 
 const GlobalStats = ({ globalStats }) => {
   return (
-    <div className=" sm:ml-32 text-gray-700">
+    <div className=" md:ml-32 text-gray-700">
       {/* globalStats data*/}
       <div className=" w-1/2  mt-16 mb-20">
         <h1 className="text-3xl font-semibold ml-2">Global Crypto Stats</h1>

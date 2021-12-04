@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BsCurrencyExchange } from 'react-icons/bs';
 import { ImStatsBars2 } from 'react-icons/im';
 import { RiCompassDiscoverLine } from 'react-icons/ri';
@@ -6,6 +6,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
+  const [click, setClick] = useState(false);
   useEffect(() => {
     //grab mobile responsive nav
     const btn = document.querySelector('.mobile-menu-button');
@@ -16,6 +17,10 @@ function Navbar() {
       menu.classList.toggle('hidden');
     });
   });
+
+  const handleClick = () => {
+    setClick(!click);
+  };
 
   return (
     //   navbar container
@@ -34,15 +39,15 @@ function Navbar() {
 
           <div>
             <ul className="hidden mt-3 sm:flex space-x-16 ">
-              <li className="hover:text-yellow-400">
-                <Link to="/exchanges">Exchanges</Link>
-              </li>
-              <li className="hover:text-yellow-400">
-                <Link to="/cryptocurrency">Market</Link>
-              </li>
-              <li className="hover:text-yellow-400">
-                <Link to="/news">Discover</Link>
-              </li>
+              <Link to="/exchanges">
+                <li className="hover:text-yellow-400">Exchanges</li>
+              </Link>
+              <Link to="/cryptocurrency">
+                <li className="hover:text-yellow-400">Market</li>
+              </Link>
+              <Link to="/news">
+                <li className="hover:text-yellow-400">Discover</li>
+              </Link>
             </ul>
           </div>
 
@@ -59,7 +64,7 @@ function Navbar() {
 
           {/* mobile button */}
           <div className="sm:hidden flex item-center ">
-            <button className="mobile-menu-button">
+            <button className="mobile-menu-button" onClick={handleClick}>
               <GiHamburgerMenu className=" h-12 w-8" />
             </button>
           </div>
@@ -68,29 +73,46 @@ function Navbar() {
 
       {/* mobile menu  */}
       <div className="mobile-menu hidden sm:hidden p-5 mt-2 w-1/2 absolute right-0  bg-white">
-        <ul className="mx-3 text-lg flex flex-col">
-          <li>
-            <div className="p-2 text-center hover:text-yellow-400">
-              <Link to="/login">Login</Link>
-            </div>
-          </li>
-          <li>
-            <div className="p-3 text-center rounded-lg bg-yellow-400 hover:bg-yellow-300">
-              <Link to="/">Register</Link>
-            </div>
-          </li>
-          <li className="mt-5 flex hover:text-yellow-400">
-            <BsCurrencyExchange />
-            <Link to="/exchanges">Exchange</Link>
-          </li>
-          <li className="mt-3 flex hover:text-yellow-400">
-            <ImStatsBars2 />
-            <Link to="/cryptocurrency">Market</Link>
-          </li>
-          <li className="mt-3 flex hover:text-yellow-400">
-            <RiCompassDiscoverLine />
-            <Link to="/news">Discover</Link>
-          </li>
+        <ul className={click ? 'mx-3 text-lg flex flex-col' : 'hidden'}>
+          <Link to="/login">
+            <li>
+              <div className="p-2 text-center hover:text-yellow-400">Login</div>
+            </li>
+          </Link>
+          <Link to="/">
+            <li>
+              <div className="p-3 text-center rounded-lg bg-yellow-400 hover:bg-yellow-300">
+                Register
+              </div>
+            </li>
+          </Link>
+          <Link to="/exchanges">
+            <li
+              className="mt-5 flex hover:text-yellow-400 "
+              onClick={handleClick}
+            >
+              <BsCurrencyExchange />
+              Exchange
+            </li>
+          </Link>
+          <Link to="/cryptocurrency">
+            <li
+              className="mt-3 flex hover:text-yellow-400"
+              onClick={handleClick}
+            >
+              <ImStatsBars2 />
+              Market
+            </li>
+          </Link>
+          <Link to="/news">
+            <li
+              className="mt-3 flex hover:text-yellow-400"
+              onClick={handleClick}
+            >
+              <RiCompassDiscoverLine />
+              Discover
+            </li>
+          </Link>
         </ul>
       </div>
     </nav>
