@@ -9,6 +9,13 @@ const Homepage = () => {
       <Hero />
       <Hero3 />
       <Hero2 />
+      <div className="w-16 h-16 flex justify-center items-center sticky bottom-8 float-right bg-yellow-300 mt-60 mr-2  rounded-full animate-bounce">
+        <img
+          alt="open chat"
+          src="https://cdn-icons-png.flaticon.com/512/569/569412.png"
+          className="h-8 w-8 "
+        />
+      </div>
     </>
   );
 };

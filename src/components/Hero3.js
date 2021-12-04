@@ -17,7 +17,8 @@ const Hero3 = () => {
           <span>Market trend</span>
         </div>
         <div>
-          <table className=" w-5/6 text-center animate-pulse">
+          {/* homepage vrypto table */}
+          <table className=" w-5/6 text-center">
             <tr className="text-gray-700">
               <th>Name</th>
               <th>Last Price</th>
